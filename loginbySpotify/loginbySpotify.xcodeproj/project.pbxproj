@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DE50A7229E7090400335183 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE50A7129E7090400335183 /* EnterEmailViewController.swift */; };
+		1DE50A7429E70FAA00335183 /* MainVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE50A7329E70FAA00335183 /* MainVeiwController.swift */; };
 		1DED37C829E6960F00150ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED37C729E6960F00150ED4 /* AppDelegate.swift */; };
 		1DED37CA29E6960F00150ED4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED37C929E6960F00150ED4 /* SceneDelegate.swift */; };
 		1DED37CC29E6961000150ED4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED37CB29E6961000150ED4 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		1DED37DF29E6961100150ED4 /* loginbySpotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED37DE29E6961100150ED4 /* loginbySpotifyTests.swift */; };
 		1DED37E929E6961100150ED4 /* loginbySpotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED37E829E6961100150ED4 /* loginbySpotifyUITests.swift */; };
 		1DED37EB29E6961100150ED4 /* loginbySpotifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED37EA29E6961100150ED4 /* loginbySpotifyUITestsLaunchTests.swift */; };
+		1DFB897C29E6F1DB00ED6521 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFB897B29E6F1DB00ED6521 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DE50A7129E7090400335183 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
+		1DE50A7329E70FAA00335183 /* MainVeiwController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVeiwController.swift; sourceTree = "<group>"; };
 		1DED37C429E6960F00150ED4 /* loginbySpotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginbySpotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DED37C729E6960F00150ED4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DED37C929E6960F00150ED4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		1DED37E429E6961100150ED4 /* loginbySpotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginbySpotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DED37E829E6961100150ED4 /* loginbySpotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginbySpotifyUITests.swift; sourceTree = "<group>"; };
 		1DED37EA29E6961100150ED4 /* loginbySpotifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginbySpotifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1DFB897B29E6F1DB00ED6521 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				1DED37D029E6961100150ED4 /* Assets.xcassets */,
 				1DED37D229E6961100150ED4 /* LaunchScreen.storyboard */,
 				1DED37D529E6961100150ED4 /* Info.plist */,
+				1DFB897B29E6F1DB00ED6521 /* LoginViewController.swift */,
+				1DE50A7129E7090400335183 /* EnterEmailViewController.swift */,
+				1DE50A7329E70FAA00335183 /* MainVeiwController.swift */,
 			);
 			path = loginbySpotify;
 			sourceTree = "<group>";
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFB897C29E6F1DB00ED6521 /* LoginViewController.swift in Sources */,
 				1DED37CC29E6961000150ED4 /* ViewController.swift in Sources */,
 				1DED37C829E6960F00150ED4 /* AppDelegate.swift in Sources */,
+				1DE50A7229E7090400335183 /* EnterEmailViewController.swift in Sources */,
 				1DED37CA29E6960F00150ED4 /* SceneDelegate.swift in Sources */,
+				1DE50A7429E70FAA00335183 /* MainVeiwController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
