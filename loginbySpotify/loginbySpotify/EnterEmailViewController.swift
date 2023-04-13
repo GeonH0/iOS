@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 
 class EnterEmailViewController : UIViewController {
     
@@ -19,6 +21,8 @@ class EnterEmailViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationbarchange()
+        
         loginButton.layer.cornerRadius = 30
         
         loginButton.isEnabled = false
@@ -31,6 +35,14 @@ class EnterEmailViewController : UIViewController {
         //화면이 켜졌을때 커서가 emailtextfiled로 잡히게 해준다.
     }
     
+    
+    func navigationbarchange(){
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.backgroundColor = .white
+        navigationController?.navigationBar.standardAppearance = navigationBarAppearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -39,6 +51,56 @@ class EnterEmailViewController : UIViewController {
     }
     
     @IBAction func loginButtonTap(_ sender: UIButton) {
+        //Firebase 이메일 비번 인증
+        
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        
+        //New
+        Auth.auth().createUser(withEmail: email, password: password){ [weak self] authResult,error in
+            guard let self = self else { return }
+            
+            if let error = error{
+                let code = (error as NSError).code
+                switch code{
+                case 17007: // 이미 가입한 계정일때
+                    self.loginUser(withEmail: email, password: password)
+                    //로그인 하기
+                    
+                default:
+                    self.errorLabel.text = error.localizedDescription
+                    
+                    
+                }
+            }else
+            {
+                self.showMainViewController()
+            }
+            
+            
+                
+        }
+    }
+    private func showMainViewController (){
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let mainViewController = storyboard.instantiateViewController(identifier: "MainViewController")
+        mainViewController.modalPresentationStyle = .fullScreen
+        navigationController?.show(mainViewController, sender: nil)
+    }
+    
+    private func loginUser(withEmail email:String,password:String){
+        Auth.auth().signIn(withEmail: email,password: password ){
+            [weak self] _, error in
+            guard let self = self else { return }
+            
+            if let error = error{
+                errorLabel.text = error.localizedDescription
+                
+            }else{
+                showMainViewController()
+            }
+            
+        }
     }
     
 }

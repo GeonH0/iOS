@@ -1,0 +1,6 @@
+framework module Pods_loginbySpotify_loginbySpotifyUITests {
+  umbrella header "Pods-loginbySpotify-loginbySpotifyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
