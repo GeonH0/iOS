@@ -191,6 +191,7 @@
 				1DED37C129E6960F00150ED4 /* Frameworks */,
 				1DED37C229E6960F00150ED4 /* Resources */,
 				5781E0DD54FA161D028FE5C8 /* [CP] Embed Pods Frameworks */,
+				0B921B468888276553DC29BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +230,7 @@
 				1DED37E129E6961100150ED4 /* Frameworks */,
 				1DED37E229E6961100150ED4 /* Resources */,
 				A17C3F58456F105DDF73C2A0 /* [CP] Embed Pods Frameworks */,
+				CE25A9A787D5C99B9B427DDE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,6 +314,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B921B468888276553DC29BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify/Pods-loginbySpotify-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify/Pods-loginbySpotify-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify/Pods-loginbySpotify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1C24A4D520F6E98A026E451A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +407,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify-loginbySpotifyUITests/Pods-loginbySpotify-loginbySpotifyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE25A9A787D5C99B9B427DDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify-loginbySpotifyUITests/Pods-loginbySpotify-loginbySpotifyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify-loginbySpotifyUITests/Pods-loginbySpotify-loginbySpotifyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify-loginbySpotifyUITests/Pods-loginbySpotify-loginbySpotifyUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED793BC0DE1D40C861C53716 /* [CP] Check Pods Manifest.lock */ = {
