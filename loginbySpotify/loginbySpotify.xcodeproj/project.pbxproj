@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1D29BD0E29E7AF0D00CE73D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D29BD0D29E7AF0D00CE73D4 /* GoogleService-Info.plist */; };
+		1D2C05B629F5818A005B8492 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1D2C05B529F5818A005B8492 /* FirebaseAuth */; };
+		1D2C05B929F581B5005B8492 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1D2C05B829F581B5005B8492 /* GoogleSignIn */; };
+		1D2C05BB29F581B5005B8492 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D2C05BA29F581B5005B8492 /* GoogleSignInSwift */; };
 		1DE50A7229E7090400335183 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE50A7129E7090400335183 /* EnterEmailViewController.swift */; };
 		1DE50A7429E70FAA00335183 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE50A7329E70FAA00335183 /* MainViewController.swift */; };
 		1DED37C829E6960F00150ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED37C729E6960F00150ED4 /* AppDelegate.swift */; };
@@ -77,6 +80,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B808E9A53AB3577E88DAC0F /* Pods_loginbySpotify.framework in Frameworks */,
+				1D2C05B629F5818A005B8492 /* FirebaseAuth in Frameworks */,
+				1D2C05B929F581B5005B8492 /* GoogleSignIn in Frameworks */,
+				1D2C05BB29F581B5005B8492 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,13 +197,17 @@
 				1DED37C129E6960F00150ED4 /* Frameworks */,
 				1DED37C229E6960F00150ED4 /* Resources */,
 				5781E0DD54FA161D028FE5C8 /* [CP] Embed Pods Frameworks */,
-				0B921B468888276553DC29BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = loginbySpotify;
+			packageProductDependencies = (
+				1D2C05B529F5818A005B8492 /* FirebaseAuth */,
+				1D2C05B829F581B5005B8492 /* GoogleSignIn */,
+				1D2C05BA29F581B5005B8492 /* GoogleSignInSwift */,
+			);
 			productName = loginbySpotify;
 			productReference = 1DED37C429E6960F00150ED4 /* loginbySpotify.app */;
 			productType = "com.apple.product-type.application";
@@ -230,7 +240,6 @@
 				1DED37E129E6961100150ED4 /* Frameworks */,
 				1DED37E229E6961100150ED4 /* Resources */,
 				A17C3F58456F105DDF73C2A0 /* [CP] Embed Pods Frameworks */,
-				CE25A9A787D5C99B9B427DDE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +283,10 @@
 				Base,
 			);
 			mainGroup = 1DED37BB29E6960F00150ED4;
+			packageReferences = (
+				1D2C05B429F5818A005B8492 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1D2C05B729F581B5005B8492 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 1DED37C529E6960F00150ED4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,23 +327,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B921B468888276553DC29BA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify/Pods-loginbySpotify-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify/Pods-loginbySpotify-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify/Pods-loginbySpotify-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1C24A4D520F6E98A026E451A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,23 +403,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify-loginbySpotifyUITests/Pods-loginbySpotify-loginbySpotifyUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE25A9A787D5C99B9B427DDE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify-loginbySpotifyUITests/Pods-loginbySpotify-loginbySpotifyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify-loginbySpotifyUITests/Pods-loginbySpotify-loginbySpotifyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loginbySpotify-loginbySpotifyUITests/Pods-loginbySpotify-loginbySpotifyUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED793BC0DE1D40C861C53716 /* [CP] Check Pods Manifest.lock */ = {
@@ -808,6 +787,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D2C05B429F5818A005B8492 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		1D2C05B729F581B5005B8492 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D2C05B529F5818A005B8492 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D2C05B429F5818A005B8492 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1D2C05B829F581B5005B8492 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D2C05B729F581B5005B8492 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		1D2C05BA29F581B5005B8492 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D2C05B729F581B5005B8492 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1DED37BC29E6960F00150ED4 /* Project object */;
 }

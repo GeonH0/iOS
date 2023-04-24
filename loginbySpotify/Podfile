@@ -7,9 +7,12 @@ target 'loginbySpotify' do
 
   # Pods for loginbySpotify
 
-  pod 'Firebase/Auth', '8.6.0'
-  pod 'Firebase/Firestore', '8.6.0'
-  pod 'GoogleSignIn', '5.0.2'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+
+
+
 
 
   target 'loginbySpotifyTests' do

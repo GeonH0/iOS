@@ -5,9 +5,11 @@
 //  Created by 김건호 on 2023/04/12.
 //
 
+
 import UIKit
 import Firebase
 import GoogleSignIn
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
+        
 
         // Firebase 초기화
         
@@ -30,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
     
     
 
