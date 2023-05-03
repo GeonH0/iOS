@@ -7,7 +7,6 @@ target 'loginbySpotify' do
 
   # Pods for loginbySpotify
 
-  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
 

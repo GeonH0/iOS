@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
             
             //do something
             _ = oauthToken
+            self.setUserInfo()
            }
         }
           UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
@@ -53,6 +55,7 @@ class ViewController: UIViewController {
                _ = oauthToken
                 self.setUserInfo()
             }
+              
           }
         
         
@@ -67,11 +70,6 @@ class ViewController: UIViewController {
                    //do something
                    _ = user
                    self.nameLabel.text = user?.kakaoAccount?.profile?.nickname
-                   
-                   if let url = user?.kakaoAccount?.profile?.profileImageUrl,
-                       let data = try? Data(contentsOf: url) {
-                       
-                   }
                }
            }
        }

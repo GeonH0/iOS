@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_RecommendCreditCard_RecommendCreditCardUITests : NSObject
+@end
+@implementation PodsDummy_Pods_RecommendCreditCard_RecommendCreditCardUITests
+@end

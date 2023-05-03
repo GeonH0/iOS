@@ -9,6 +9,11 @@ import UIKit
 
 class CardListCell: UITableViewCell {
 
+    @IBOutlet weak var promotionLabel: UILabel!
+    @IBOutlet weak var rankLabel: UILabel!
+    @IBOutlet weak var cardNameLabel: UILabel!
+    @IBOutlet weak var cardImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
