@@ -19,9 +19,9 @@
 		1D2C05FB29F6B5D9005B8492 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C05FA29F6B5D9005B8492 /* CreditCard.swift */; };
 		1D2C05FE29F6B6F4005B8492 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C05FC29F6B6F4005B8492 /* CardListCell.swift */; };
 		1D2C05FF29F6B6F4005B8492 /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C05FD29F6B6F4005B8492 /* CardListCell.xib */; };
+		1D3FAD5B2A0BBDFB006EB0A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FAD5A2A0BBDFB006EB0A5 /* GoogleService-Info.plist */; };
 		1DE1E17F2A0272A000727F0C /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1E17E2A0272A000727F0C /* CardDetailViewController.swift */; };
 		1DE1E1812A027AEC00727F0C /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1E1802A027AEB00727F0C /* money.json */; };
-		1DE1E1852A02A7CF00727F0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1E1842A02A7CF00727F0C /* GoogleService-Info.plist */; };
 		40AB01916691F334C5E1CA18 /* Pods_RecommendCreditCard_RecommendCreditCardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A583CF7267EA5B78A4A6FF /* Pods_RecommendCreditCard_RecommendCreditCardUITests.framework */; };
 		7D9B0CE2EBE880CA00B42164 /* Pods_RecommendCreditCardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C978C679D7A2D88EDAD64B11 /* Pods_RecommendCreditCardTests.framework */; };
 		C474AE8F0BE0383C08FF7D0F /* Pods_RecommendCreditCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F792252D4FDED0F983BC2C3 /* Pods_RecommendCreditCard.framework */; };
@@ -62,9 +62,9 @@
 		1D2C05FA29F6B5D9005B8492 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		1D2C05FC29F6B6F4005B8492 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 		1D2C05FD29F6B6F4005B8492 /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
+		1D3FAD5A2A0BBDFB006EB0A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1DE1E17E2A0272A000727F0C /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		1DE1E1802A027AEB00727F0C /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = money.json; sourceTree = "<group>"; };
-		1DE1E1842A02A7CF00727F0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2F792252D4FDED0F983BC2C3 /* Pods_RecommendCreditCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecommendCreditCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3483894E44957E0AA17BDEA3 /* Pods-RecommendCreditCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecommendCreditCard.release.xcconfig"; path = "Target Support Files/Pods-RecommendCreditCard/Pods-RecommendCreditCard.release.xcconfig"; sourceTree = "<group>"; };
 		63A583CF7267EA5B78A4A6FF /* Pods_RecommendCreditCard_RecommendCreditCardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecommendCreditCard_RecommendCreditCardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,19 +128,19 @@
 		1D2C05C729F6B493005B8492 /* RecommendCreditCard */ = {
 			isa = PBXGroup;
 			children = (
+				1DE1E1802A027AEB00727F0C /* money.json */,
 				1D2C05F829F6B4E2005B8492 /* CardListViewController.swift */,
 				1DE1E17E2A0272A000727F0C /* CardDetailViewController.swift */,
 				1D2C05C829F6B493005B8492 /* AppDelegate.swift */,
 				1D2C05CA29F6B493005B8492 /* SceneDelegate.swift */,
 				1D2C05CE29F6B493005B8492 /* Main.storyboard */,
 				1D2C05D129F6B495005B8492 /* Assets.xcassets */,
-				1DE1E1842A02A7CF00727F0C /* GoogleService-Info.plist */,
 				1D2C05D329F6B495005B8492 /* LaunchScreen.storyboard */,
 				1D2C05D629F6B495005B8492 /* Info.plist */,
 				1D2C05FA29F6B5D9005B8492 /* CreditCard.swift */,
 				1D2C05FC29F6B6F4005B8492 /* CardListCell.swift */,
 				1D2C05FD29F6B6F4005B8492 /* CardListCell.xib */,
-				1DE1E1802A027AEB00727F0C /* money.json */,
+				1D3FAD5A2A0BBDFB006EB0A5 /* GoogleService-Info.plist */,
 			);
 			path = RecommendCreditCard;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 				1DE1E1812A027AEC00727F0C /* money.json in Resources */,
 				1D2C05D029F6B493005B8492 /* Main.storyboard in Resources */,
 				1D2C05FF29F6B6F4005B8492 /* CardListCell.xib in Resources */,
-				1DE1E1852A02A7CF00727F0C /* GoogleService-Info.plist in Resources */,
+				1D3FAD5B2A0BBDFB006EB0A5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

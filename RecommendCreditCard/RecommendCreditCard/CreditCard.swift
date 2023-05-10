@@ -1,28 +1,27 @@
 //
 //  CreditCard.swift
-//  RecommendCreditCard
+//  CreditCardList
 //
-//  Created by 김건호 on 2023/04/24.
+//  Created by Bo-Young PARK on 2021/07/09.
 //
 
 import Foundation
 
-struct CreditCard: Codable{
-    let id : Int
-    let rank : Int
-    let name : String
+struct CreditCard: Codable {
+    let id: Int
+    let rank: Int
+    let name: String
     let cardImageURL: String
-    let promotionDetail : promotionDetail
+    let promotionDetail: PromotionDetail
     let isSelected: Bool?
 }
 
-struct promotionDetail: Codable {
-    let companyName:String
-    let amount: Int
+struct PromotionDetail: Codable {
+    let companyName: String
     let period: String
-    let benefitDate:String
-    let benefitDetail:String
-    let benefitCondition:String
-    let condition:String
-    
+    let amount: Int
+    let condition: String
+    let benefitCondition: String
+    let benefitDetail: String
+    let benefitDate: String
 }

@@ -10,7 +10,7 @@ import Lottie
 
 class CardDetailViewController : UIViewController {
     
-    var promotionDetail: promotionDetail?
+    var promotionDetail: PromotionDetail?
     
     @IBOutlet weak var lottieView: AnimationView!
     
@@ -41,9 +41,10 @@ class CardDetailViewController : UIViewController {
         super.viewWillAppear(animated)
         
         guard let detail = promotionDetail else { return}
+        
         titleLabel.text = """
-        \(detail.companyName)카드 쓰면
-        \(detail.amount)만원 드려요
+         \(detail.companyName)카드 쓰면
+         \(detail.amount)만원 드려요
         """
         
         periodLabel.text = detail.period
