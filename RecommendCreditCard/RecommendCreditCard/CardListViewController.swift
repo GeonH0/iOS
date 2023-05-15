@@ -91,6 +91,30 @@ class CardListViewController: UITableViewController {
         return true
     }
     
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            //Option1
+            let cardId = creditCardList[indexPath.row].id
+            
+            ref.child("Item\(cardId)").removeValue()
+            
+            //Option2
+//            ref.queryOrdered(byChild: "id").queryEqual(toValue: cardId).observe(.value){[weak self]
+//
+//                snapshot in
+//                guard let self = self,
+//                      let value = snapshot.value as? [String:[String:Any]],
+//                      let key = value.keys.first else { return}
+//
+//                self.ref.child(key).removeValue()
+//
+//
+//            }
+        }
+    }
+                
+    
    
     
     
