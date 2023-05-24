@@ -10,6 +10,9 @@ target 'RecommendCreditCard' do
 pod 'lottie-ios', '3.2.3'
 pod 'Firebase/Database'
 
+pod 'Firebase'
+pod 'FirebaseFirestoreSwift'
+
   target 'RecommendCreditCardTests' do
     inherit! :search_paths
     # Pods for testing

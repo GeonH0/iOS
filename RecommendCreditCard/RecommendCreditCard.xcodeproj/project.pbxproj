@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D18CF722A1290F200726198 /* CreditCardDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D18CF712A1290F200726198 /* CreditCardDummy.swift */; };
 		1D2C05C929F6B493005B8492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C05C829F6B493005B8492 /* AppDelegate.swift */; };
 		1D2C05CB29F6B493005B8492 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C05CA29F6B493005B8492 /* SceneDelegate.swift */; };
 		1D2C05D029F6B493005B8492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C05CE29F6B493005B8492 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		15CFD7B3674930DCD383BB91 /* Pods-RecommendCreditCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecommendCreditCard.debug.xcconfig"; path = "Target Support Files/Pods-RecommendCreditCard/Pods-RecommendCreditCard.debug.xcconfig"; sourceTree = "<group>"; };
+		1D18CF712A1290F200726198 /* CreditCardDummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDummy.swift; sourceTree = "<group>"; };
 		1D2C05C529F6B493005B8492 /* RecommendCreditCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecommendCreditCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2C05C829F6B493005B8492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D2C05CA29F6B493005B8492 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				1D2C05D329F6B495005B8492 /* LaunchScreen.storyboard */,
 				1D2C05D629F6B495005B8492 /* Info.plist */,
 				1D2C05FA29F6B5D9005B8492 /* CreditCard.swift */,
+				1D18CF712A1290F200726198 /* CreditCardDummy.swift */,
 				1D2C05FC29F6B6F4005B8492 /* CardListCell.swift */,
 				1D2C05FD29F6B6F4005B8492 /* CardListCell.xib */,
 				1D3FAD5A2A0BBDFB006EB0A5 /* GoogleService-Info.plist */,
@@ -431,6 +434,7 @@
 				1DE1E17F2A0272A000727F0C /* CardDetailViewController.swift in Sources */,
 				1D2C05FE29F6B6F4005B8492 /* CardListCell.swift in Sources */,
 				1D2C05F929F6B4E2005B8492 /* CardListViewController.swift in Sources */,
+				1D18CF722A1290F200726198 /* CreditCardDummy.swift in Sources */,
 				1D2C05C929F6B493005B8492 /* AppDelegate.swift in Sources */,
 				1D2C05CB29F6B493005B8492 /* SceneDelegate.swift in Sources */,
 			);
