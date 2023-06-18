@@ -34,6 +34,7 @@ class CardListViewController: UITableViewController {
                 let cardList = Array(cardData.values)
                 self.creditCardList = cardList.sorted {$0.rank < $1.rank}
                 
+                
                 DispatchQueue.main.async {
                     self.tableView.reloadData() 
                 }
