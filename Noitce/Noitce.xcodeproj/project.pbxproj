@@ -19,6 +19,7 @@
 		1D479F9B2A3F3744000BEFC6 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D479F992A3F3744000BEFC6 /* NoticeViewController.swift */; };
 		1D479F9C2A3F3744000BEFC6 /* NoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D479F9A2A3F3744000BEFC6 /* NoticeViewController.xib */; };
 		1D479F9E2A40566F000BEFC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D479F9D2A40566F000BEFC6 /* GoogleService-Info.plist */; };
+		1DAF0B3F2A4059B400C0636F /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DAF0B3E2A4059B400C0636F /* RemoteConfigDefaults.plist */; };
 		70DD1352A82FF4C5731FFF19 /* Pods_NoitceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D8D38592059BA7B8E5D944 /* Pods_NoitceTests.framework */; };
 		A8C66253C7F722608144D0B9 /* Pods_Noitce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054A5F1C8437AFA2821C26BC /* Pods_Noitce.framework */; };
 		C5D6487BA70D8B9017B339EF /* Pods_Noitce_NoitceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C9A361CB8F672860614ECC /* Pods_Noitce_NoitceUITests.framework */; };
@@ -59,6 +60,7 @@
 		1D479F992A3F3744000BEFC6 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		1D479F9A2A3F3744000BEFC6 /* NoticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeViewController.xib; sourceTree = "<group>"; };
 		1D479F9D2A40566F000BEFC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1DAF0B3E2A4059B400C0636F /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		472FDB9F41BF781CFABE0B4E /* Pods-Noitce-NoitceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noitce-NoitceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Noitce-NoitceUITests/Pods-Noitce-NoitceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		50C9A361CB8F672860614ECC /* Pods_Noitce_NoitceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noitce_NoitceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55AC432C5AC290A75687345F /* Pods-NoitceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoitceTests.debug.xcconfig"; path = "Target Support Files/Pods-NoitceTests/Pods-NoitceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				1D479F692A3F36D9000BEFC6 /* AppDelegate.swift */,
 				1D479F6B2A3F36D9000BEFC6 /* SceneDelegate.swift */,
 				1D479F6D2A3F36D9000BEFC6 /* ViewController.swift */,
+				1DAF0B3E2A4059B400C0636F /* RemoteConfigDefaults.plist */,
 				1D479F6F2A3F36D9000BEFC6 /* Main.storyboard */,
 				1D479F992A3F3744000BEFC6 /* NoticeViewController.swift */,
 				1D479F9A2A3F3744000BEFC6 /* NoticeViewController.xib */,
@@ -163,7 +166,6 @@
 				55AC432C5AC290A75687345F /* Pods-NoitceTests.debug.xcconfig */,
 				7DC0FDBF934FC8455371FF88 /* Pods-NoitceTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -286,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DAF0B3F2A4059B400C0636F /* RemoteConfigDefaults.plist in Resources */,
 				1D479F762A3F36DB000BEFC6 /* LaunchScreen.storyboard in Resources */,
 				1D479F732A3F36DB000BEFC6 /* Assets.xcassets in Resources */,
 				1D479F9E2A40566F000BEFC6 /* GoogleService-Info.plist in Resources */,
