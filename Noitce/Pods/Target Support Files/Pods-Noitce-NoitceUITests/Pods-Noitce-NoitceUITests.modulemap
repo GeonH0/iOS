@@ -1,0 +1,6 @@
+framework module Pods_Noitce_NoitceUITests {
+  umbrella header "Pods-Noitce-NoitceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -18,6 +18,10 @@
 		1D479F8D2A3F36DB000BEFC6 /* NoitceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D479F8C2A3F36DB000BEFC6 /* NoitceUITestsLaunchTests.swift */; };
 		1D479F9B2A3F3744000BEFC6 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D479F992A3F3744000BEFC6 /* NoticeViewController.swift */; };
 		1D479F9C2A3F3744000BEFC6 /* NoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D479F9A2A3F3744000BEFC6 /* NoticeViewController.xib */; };
+		1D479F9E2A40566F000BEFC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D479F9D2A40566F000BEFC6 /* GoogleService-Info.plist */; };
+		70DD1352A82FF4C5731FFF19 /* Pods_NoitceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D8D38592059BA7B8E5D944 /* Pods_NoitceTests.framework */; };
+		A8C66253C7F722608144D0B9 /* Pods_Noitce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054A5F1C8437AFA2821C26BC /* Pods_Noitce.framework */; };
+		C5D6487BA70D8B9017B339EF /* Pods_Noitce_NoitceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C9A361CB8F672860614ECC /* Pods_Noitce_NoitceUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054A5F1C8437AFA2821C26BC /* Pods_Noitce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noitce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D479F662A3F36D9000BEFC6 /* Noitce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noitce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D479F692A3F36D9000BEFC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D479F6B2A3F36D9000BEFC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +58,15 @@
 		1D479F8C2A3F36DB000BEFC6 /* NoitceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoitceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D479F992A3F3744000BEFC6 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		1D479F9A2A3F3744000BEFC6 /* NoticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeViewController.xib; sourceTree = "<group>"; };
+		1D479F9D2A40566F000BEFC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		472FDB9F41BF781CFABE0B4E /* Pods-Noitce-NoitceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noitce-NoitceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Noitce-NoitceUITests/Pods-Noitce-NoitceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50C9A361CB8F672860614ECC /* Pods_Noitce_NoitceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Noitce_NoitceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AC432C5AC290A75687345F /* Pods-NoitceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoitceTests.debug.xcconfig"; path = "Target Support Files/Pods-NoitceTests/Pods-NoitceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70173C151094BF0562C4971F /* Pods-Noitce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noitce.debug.xcconfig"; path = "Target Support Files/Pods-Noitce/Pods-Noitce.debug.xcconfig"; sourceTree = "<group>"; };
+		7DC0FDBF934FC8455371FF88 /* Pods-NoitceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoitceTests.release.xcconfig"; path = "Target Support Files/Pods-NoitceTests/Pods-NoitceTests.release.xcconfig"; sourceTree = "<group>"; };
+		7ECEE9C4610DD26C3E75C44E /* Pods-Noitce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noitce.release.xcconfig"; path = "Target Support Files/Pods-Noitce/Pods-Noitce.release.xcconfig"; sourceTree = "<group>"; };
+		CCDC56324E9C3F08CF662514 /* Pods-Noitce-NoitceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noitce-NoitceUITests.release.xcconfig"; path = "Target Support Files/Pods-Noitce-NoitceUITests/Pods-Noitce-NoitceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D8D8D38592059BA7B8E5D944 /* Pods_NoitceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoitceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C66253C7F722608144D0B9 /* Pods_Noitce.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DD1352A82FF4C5731FFF19 /* Pods_NoitceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D6487BA70D8B9017B339EF /* Pods_Noitce_NoitceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +104,8 @@
 				1D479F7F2A3F36DB000BEFC6 /* NoitceTests */,
 				1D479F892A3F36DB000BEFC6 /* NoitceUITests */,
 				1D479F672A3F36D9000BEFC6 /* Products */,
+				D62D8F11450F7D726BF3EC95 /* Pods */,
+				E3FE8B27EAE079F656E8EEF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +131,7 @@
 				1D479F722A3F36DB000BEFC6 /* Assets.xcassets */,
 				1D479F742A3F36DB000BEFC6 /* LaunchScreen.storyboard */,
 				1D479F772A3F36DB000BEFC6 /* Info.plist */,
+				1D479F9D2A40566F000BEFC6 /* GoogleService-Info.plist */,
 			);
 			path = Noitce;
 			sourceTree = "<group>";
@@ -133,6 +153,30 @@
 			path = NoitceUITests;
 			sourceTree = "<group>";
 		};
+		D62D8F11450F7D726BF3EC95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70173C151094BF0562C4971F /* Pods-Noitce.debug.xcconfig */,
+				7ECEE9C4610DD26C3E75C44E /* Pods-Noitce.release.xcconfig */,
+				472FDB9F41BF781CFABE0B4E /* Pods-Noitce-NoitceUITests.debug.xcconfig */,
+				CCDC56324E9C3F08CF662514 /* Pods-Noitce-NoitceUITests.release.xcconfig */,
+				55AC432C5AC290A75687345F /* Pods-NoitceTests.debug.xcconfig */,
+				7DC0FDBF934FC8455371FF88 /* Pods-NoitceTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3FE8B27EAE079F656E8EEF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				054A5F1C8437AFA2821C26BC /* Pods_Noitce.framework */,
+				50C9A361CB8F672860614ECC /* Pods_Noitce_NoitceUITests.framework */,
+				D8D8D38592059BA7B8E5D944 /* Pods_NoitceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D479F902A3F36DB000BEFC6 /* Build configuration list for PBXNativeTarget "Noitce" */;
 			buildPhases = (
+				9C00A166E60E28D621DDD964 /* [CP] Check Pods Manifest.lock */,
 				1D479F622A3F36D9000BEFC6 /* Sources */,
 				1D479F632A3F36D9000BEFC6 /* Frameworks */,
 				1D479F642A3F36D9000BEFC6 /* Resources */,
+				FB3D33880280E8E96833E5A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D479F932A3F36DB000BEFC6 /* Build configuration list for PBXNativeTarget "NoitceTests" */;
 			buildPhases = (
+				81636B643FA712D4C895240F /* [CP] Check Pods Manifest.lock */,
 				1D479F782A3F36DB000BEFC6 /* Sources */,
 				1D479F792A3F36DB000BEFC6 /* Frameworks */,
 				1D479F7A2A3F36DB000BEFC6 /* Resources */,
@@ -175,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D479F962A3F36DB000BEFC6 /* Build configuration list for PBXNativeTarget "NoitceUITests" */;
 			buildPhases = (
+				CDA05FE03A64FA6455E6808E /* [CP] Check Pods Manifest.lock */,
 				1D479F822A3F36DB000BEFC6 /* Sources */,
 				1D479F832A3F36DB000BEFC6 /* Frameworks */,
 				1D479F842A3F36DB000BEFC6 /* Resources */,
+				9F4477BAF36126EFBFF8E676 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +288,7 @@
 			files = (
 				1D479F762A3F36DB000BEFC6 /* LaunchScreen.storyboard in Resources */,
 				1D479F732A3F36DB000BEFC6 /* Assets.xcassets in Resources */,
+				1D479F9E2A40566F000BEFC6 /* GoogleService-Info.plist in Resources */,
 				1D479F9C2A3F3744000BEFC6 /* NoticeViewController.xib in Resources */,
 				1D479F712A3F36D9000BEFC6 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +309,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81636B643FA712D4C895240F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoitceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C00A166E60E28D621DDD964 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Noitce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F4477BAF36126EFBFF8E676 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Noitce-NoitceUITests/Pods-Noitce-NoitceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Noitce-NoitceUITests/Pods-Noitce-NoitceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Noitce-NoitceUITests/Pods-Noitce-NoitceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA05FE03A64FA6455E6808E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Noitce-NoitceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3D33880280E8E96833E5A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Noitce/Pods-Noitce-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Noitce/Pods-Noitce-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Noitce/Pods-Noitce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D479F622A3F36D9000BEFC6 /* Sources */ = {
@@ -440,6 +593,7 @@
 		};
 		1D479F912A3F36DB000BEFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70173C151094BF0562C4971F /* Pods-Noitce.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +625,7 @@
 		};
 		1D479F922A3F36DB000BEFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECEE9C4610DD26C3E75C44E /* Pods-Noitce.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -502,6 +657,7 @@
 		};
 		1D479F942A3F36DB000BEFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AC432C5AC290A75687345F /* Pods-NoitceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +678,7 @@
 		};
 		1D479F952A3F36DB000BEFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC0FDBF934FC8455371FF88 /* Pods-NoitceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -542,6 +699,7 @@
 		};
 		1D479F972A3F36DB000BEFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 472FDB9F41BF781CFABE0B4E /* Pods-Noitce-NoitceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +718,7 @@
 		};
 		1D479F982A3F36DB000BEFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCDC56324E9C3F08CF662514 /* Pods-Noitce-NoitceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

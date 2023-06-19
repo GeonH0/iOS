@@ -8,22 +8,34 @@
 import UIKit
 
 class NoticeViewController: UIViewController {
+    
+    var noticeContents: (title: String, detail: String, date: String)?
 
+    @IBOutlet weak var noticeView: UIView!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        noticeView.layer.cornerRadius =  6
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        //기본 view의 backgroud color
+        
+        guard let noticeContents = noticeContents else {return} // optional 처리
+        titleLabel.text = noticeContents.title
+        detailLabel.text = noticeContents.detail
+        dateLabel.text = noticeContents.date
+                
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func doneButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true)
     }
-    */
-
 }
