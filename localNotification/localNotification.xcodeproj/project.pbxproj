@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		1DF0D25D2A418C9500318016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0D25C2A418C9500318016 /* AppDelegate.swift */; };
 		1DF0D25F2A418C9500318016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0D25E2A418C9500318016 /* SceneDelegate.swift */; };
-		1DF0D2612A418C9500318016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0D2602A418C9500318016 /* ViewController.swift */; };
 		1DF0D2642A418C9500318016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0D2622A418C9500318016 /* Main.storyboard */; };
 		1DF0D2662A418C9600318016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0D2652A418C9600318016 /* Assets.xcassets */; };
 		1DF0D2692A418C9600318016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0D2672A418C9600318016 /* LaunchScreen.storyboard */; };
 		1DF0D2742A418C9600318016 /* localNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0D2732A418C9600318016 /* localNotificationTests.swift */; };
 		1DF0D27E2A418C9600318016 /* localNotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0D27D2A418C9600318016 /* localNotificationUITests.swift */; };
 		1DF0D2802A418C9600318016 /* localNotificationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0D27F2A418C9600318016 /* localNotificationUITestsLaunchTests.swift */; };
+		1DF0D28D2A41924800318016 /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0D28C2A41924800318016 /* AlertListViewController.swift */; };
+		1DF0D2902A4193B500318016 /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0D28E2A4193B500318016 /* AlertListCell.swift */; };
+		1DF0D2912A4193B500318016 /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0D28F2A4193B500318016 /* AlertListCell.xib */; };
+		1DF0D2932A4195D600318016 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0D2922A4195D600318016 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		1DF0D2592A418C9500318016 /* localNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = localNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF0D25C2A418C9500318016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DF0D25E2A418C9500318016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1DF0D2602A418C9500318016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1DF0D2632A418C9500318016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DF0D2652A418C9600318016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DF0D2682A418C9600318016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		1DF0D2792A418C9600318016 /* localNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = localNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF0D27D2A418C9600318016 /* localNotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localNotificationUITests.swift; sourceTree = "<group>"; };
 		1DF0D27F2A418C9600318016 /* localNotificationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localNotificationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1DF0D28C2A41924800318016 /* AlertListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
+		1DF0D28E2A4193B500318016 /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
+		1DF0D28F2A4193B500318016 /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
+		1DF0D2922A4195D600318016 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 			children = (
 				1DF0D25C2A418C9500318016 /* AppDelegate.swift */,
 				1DF0D25E2A418C9500318016 /* SceneDelegate.swift */,
-				1DF0D2602A418C9500318016 /* ViewController.swift */,
+				1DF0D28C2A41924800318016 /* AlertListViewController.swift */,
+				1DF0D2922A4195D600318016 /* Alert.swift */,
+				1DF0D28E2A4193B500318016 /* AlertListCell.swift */,
+				1DF0D28F2A4193B500318016 /* AlertListCell.xib */,
 				1DF0D2622A418C9500318016 /* Main.storyboard */,
 				1DF0D2652A418C9600318016 /* Assets.xcassets */,
 				1DF0D2672A418C9600318016 /* LaunchScreen.storyboard */,
@@ -233,6 +242,7 @@
 			files = (
 				1DF0D2692A418C9600318016 /* LaunchScreen.storyboard in Resources */,
 				1DF0D2662A418C9600318016 /* Assets.xcassets in Resources */,
+				1DF0D2912A4193B500318016 /* AlertListCell.xib in Resources */,
 				1DF0D2642A418C9500318016 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DF0D2612A418C9500318016 /* ViewController.swift in Sources */,
 				1DF0D25D2A418C9500318016 /* AppDelegate.swift in Sources */,
 				1DF0D25F2A418C9500318016 /* SceneDelegate.swift in Sources */,
+				1DF0D2902A4193B500318016 /* AlertListCell.swift in Sources */,
+				1DF0D2932A4195D600318016 /* Alert.swift in Sources */,
+				1DF0D28D2A41924800318016 /* AlertListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
