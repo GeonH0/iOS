@@ -7,11 +7,12 @@
 
 
 import UIKit
+import UserNotifications
 
 class AlertListViewController : UITableViewController{
     
     var alerts:[Alert] = []
-    
+    let userNotificationCenter = UNUserNotificationCenter.current()
     
     
     
@@ -22,8 +23,9 @@ class AlertListViewController : UITableViewController{
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        alerts = alertList() //userDefault에 있는 값을 전달해줌
+        self.alerts = alertList() //userDefault에 있는 값을 전달해줌
     }
+    
     @IBAction func addAlertButtonAction(_ sender: UIBarButtonItem) {
         guard let addAlertVC = storyboard?.instantiateViewController(withIdentifier: "AddAlertViewController") as? AddAlertViewController else { return}
         
@@ -40,6 +42,7 @@ class AlertListViewController : UITableViewController{
             self.alerts = alertList
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
             
+            self.userNotificationCenter.addNotificationRequest(by: newAlert)
             self.tableView.reloadData()
             
         }
@@ -94,9 +97,13 @@ extension AlertListViewController{
         switch editingStyle{
         case .delete:
             //notification delete
-            
+
+            userNotificationCenter.removePendingNotificationRequests(withIdentifiers: [alerts[indexPath.row].id])
             self.alerts.remove(at: indexPath.row)
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
+            
+            
+            
             self.tableView.reloadData()
         return
             
