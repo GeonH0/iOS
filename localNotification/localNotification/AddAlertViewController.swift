@@ -9,10 +9,11 @@ import UIKit
 
 class AddAlertViewController : UIViewController{
     
-    var pickedDate : ((_ date: Date)-> Void)?
+    
     
     
     @IBOutlet weak var datePicker: UIDatePicker!
+    var datePicked : ((_ date: Date)-> Void)?
     
     
     @IBAction func dismissButtonTapped(_ sender: UIBarButtonItem) {
@@ -20,7 +21,7 @@ class AddAlertViewController : UIViewController{
     }
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
-        pickedDate?(datePicker.date)
+        datePicked?(datePicker.date)
         self.dismiss(animated: true,completion: nil)
     }
 }

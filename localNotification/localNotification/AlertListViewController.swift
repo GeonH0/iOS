@@ -30,7 +30,7 @@ class AlertListViewController : UITableViewController{
         guard let addAlertVC = storyboard?.instantiateViewController(withIdentifier: "AddAlertViewController") as? AddAlertViewController else { return}
         
         
-        addAlertVC.pickedDate = {[weak self] date in
+        addAlertVC.datePicked = {[weak self] date in
             guard let self = self else { return }
             
             var alertList = self.alertList()
@@ -58,6 +58,7 @@ class AlertListViewController : UITableViewController{
 }
 
 // UITabelView dataSource,Delegate
+
 extension AlertListViewController{
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return alerts.count
@@ -72,17 +73,14 @@ extension AlertListViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AlertListCell", for: indexPath) as? AlertListCell else { return UITableViewCell()}
-        
-        cell.alertSwitch.isOn = alerts[indexPath.row].isOn
-        cell.timeLabel.text =  alerts[indexPath.row].time
-        cell.meridiemLabel.text = alerts[indexPath.row].meridiem
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AlertListCell", for: indexPath) as? AlertListCell else { return UITableViewCell() }
         
         cell.alertSwitch.tag = indexPath.row
+        cell.alertSwitch.isOn = alerts[indexPath.row].isOn
+        cell.timeLabel.text = alerts[indexPath.row].time
+        cell.meridiemLabel.text = alerts[indexPath.row].meridiem
         
         return cell
-        
-        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
