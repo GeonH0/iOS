@@ -8,6 +8,7 @@
 import UserNotifications
 
 extension UNUserNotificationCenter {
+    
     func addNotificationRequest(by alert: Alert) {
         let content = UNMutableNotificationContent()
         content.title = "물 마실 시간이예요💦"
