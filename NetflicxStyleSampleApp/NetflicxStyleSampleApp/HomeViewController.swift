@@ -13,7 +13,11 @@ class HomeViewController : UICollectionViewController {
     var contents: [Content] = []
     
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
+        
+        collectionView.backgroundColor = .black
         
         //네비게이션 설정
         navigationController?.navigationBar.backgroundColor = .clear
