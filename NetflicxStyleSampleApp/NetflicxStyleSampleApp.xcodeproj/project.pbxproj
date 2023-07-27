@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D1513DA2A714A5900D1EDDC /* ContentCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1513D92A714A5900D1EDDC /* ContentCollectionViewRankCell.swift */; };
+		1D1513DC2A7201F000D1EDDC /* ContentCollectionViewMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1513DB2A7201F000D1EDDC /* ContentCollectionViewMainCell.swift */; };
 		1D4880F72A6F9CFA00064554 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1D4880F62A6F9CFA00064554 /* SnapKit */; };
 		1D8FBC9C2A6FE8D6001C9B32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8FBC9B2A6FE8D6001C9B32 /* HomeViewController.swift */; };
 		1D8FBC9E2A7015E3001C9B32 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8FBC9D2A7015E3001C9B32 /* Content.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		1D1513D92A714A5900D1EDDC /* ContentCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewRankCell.swift; sourceTree = "<group>"; };
+		1D1513DB2A7201F000D1EDDC /* ContentCollectionViewMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewMainCell.swift; sourceTree = "<group>"; };
 		1D8FBC9B2A6FE8D6001C9B32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1D8FBC9D2A7015E3001C9B32 /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Content.swift; path = "../../../IOS_EX/Part 3/Ch6_NetflixStyle/NetflixStyleCollectionViewSampleApp/NetflixStyleCollectionViewSampleApp/Content.swift"; sourceTree = "<group>"; };
 		1D8FBCA52A701831001C9B32 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				1DD2FEA72A4D7DC7003CE9F8 /* Content.plist */,
 				1D8FBC9D2A7015E3001C9B32 /* Content.swift */,
 				1D8FBC9B2A6FE8D6001C9B32 /* HomeViewController.swift */,
+				1D1513DB2A7201F000D1EDDC /* ContentCollectionViewMainCell.swift */,
 				1D1513D92A714A5900D1EDDC /* ContentCollectionViewRankCell.swift */,
 				1D9D31142A701BA800A16368 /* ContentCollectionViewHeader.swift */,
 				1D8FBCA52A701831001C9B32 /* ContentCollectionViewCell.swift */,
@@ -283,6 +286,7 @@
 				1D8FBCA62A701831001C9B32 /* ContentCollectionViewCell.swift in Sources */,
 				1D1513DA2A714A5900D1EDDC /* ContentCollectionViewRankCell.swift in Sources */,
 				1DD2FE732A4D6FF0003CE9F8 /* SceneDelegate.swift in Sources */,
+				1D1513DC2A7201F000D1EDDC /* ContentCollectionViewMainCell.swift in Sources */,
 				1D8FBC9C2A6FE8D6001C9B32 /* HomeViewController.swift in Sources */,
 				1D8FBC9E2A7015E3001C9B32 /* Content.swift in Sources */,
 			);

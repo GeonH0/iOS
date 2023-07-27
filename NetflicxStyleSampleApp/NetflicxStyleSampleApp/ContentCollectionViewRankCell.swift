@@ -22,7 +22,7 @@ class ContentCollectionViewRankCell : UICollectionViewCell {
         imageView.contentMode = .scaleToFill
         contentView.addSubview(imageView)
         //autolayout
-        contentView.snp.makeConstraints{
+        imageView.snp.makeConstraints{
             $0.top.trailing.bottom.equalToSuperview()
             $0.width.equalToSuperview().multipliedBy(0.8)
         }
