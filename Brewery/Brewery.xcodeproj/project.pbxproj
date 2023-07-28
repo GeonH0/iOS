@@ -17,6 +17,7 @@
 		1DEDA1CE2A73BB9000BAA1F7 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA1CD2A73BB9000BAA1F7 /* BeerListViewController.swift */; };
 		1DEDA1D12A73BF2100BAA1F7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1DEDA1D02A73BF2100BAA1F7 /* SnapKit */; };
 		1DEDA1D42A73BF6400BAA1F7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1DEDA1D32A73BF6400BAA1F7 /* Kingfisher */; };
+		1DEDA1D62A73C31500BAA1F7 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA1D52A73C31500BAA1F7 /* Beer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1DEDA1BE2A73BB2C00BAA1F7 /* BreweryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryUITests.swift; sourceTree = "<group>"; };
 		1DEDA1C02A73BB2C00BAA1F7 /* BreweryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1DEDA1CD2A73BB9000BAA1F7 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		1DEDA1D52A73C31500BAA1F7 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				1DEDA19D2A73BB2B00BAA1F7 /* AppDelegate.swift */,
 				1DEDA19F2A73BB2B00BAA1F7 /* SceneDelegate.swift */,
 				1DEDA1CD2A73BB9000BAA1F7 /* BeerListViewController.swift */,
+				1DEDA1D52A73C31500BAA1F7 /* Beer.swift */,
 				1DEDA1A62A73BB2C00BAA1F7 /* Assets.xcassets */,
 				1DEDA1A82A73BB2C00BAA1F7 /* LaunchScreen.storyboard */,
 				1DEDA1AB2A73BB2C00BAA1F7 /* Info.plist */,
@@ -269,6 +272,7 @@
 				1DEDA1CE2A73BB9000BAA1F7 /* BeerListViewController.swift in Sources */,
 				1DEDA19E2A73BB2B00BAA1F7 /* AppDelegate.swift in Sources */,
 				1DEDA1A02A73BB2B00BAA1F7 /* SceneDelegate.swift in Sources */,
+				1DEDA1D62A73C31500BAA1F7 /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
