@@ -10,11 +10,20 @@ import SwiftUI
 struct CircleImage: View {
     var body: some View {
         Image("turtlerock")
-            .clipShape(Circle())
+            
+            
+            .clipShape( Path { path in
+                path.move(to:CGPoint(x: 100, y: 0))
+                path.addLine(to: CGPoint(x: 0, y: 200))
+                path.addLine(to: CGPoint(x: 200, y: 0))
+                path.addLine(to: CGPoint(x: 100, y: 0))
+            })
             .overlay{
-                Circle().stroke(.white,lineWidth: 4)
+//                Circle().stroke(.white,lineWidth: 4)
+                Ellipse().stroke(.white,lineWidth: 4).frame(width: 100,height: 50)
             }
             .shadow(radius: 7)
+            
     }
 }
 
