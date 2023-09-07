@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Kingfisher
 
-class BeerList : UITableViewCell {
+class BeerListCell : UITableViewCell {
     let beerImageView = UIImageView()
     let nameLabel = UILabel()
     let taglineLabel = UILabel()
@@ -46,5 +46,17 @@ class BeerList : UITableViewCell {
             $0.leading.trailing.equalTo(nameLabel)
             $0.top.equalTo(nameLabel.snp.bottom).offset(5)
         }
+    }
+    //Cell데이터 연결
+    func configure(with beer: Beer){
+        let imageURL = URL(string: beer.imageURL ?? "")
+        
+        beerImageView.kf.setImage(with: imageURL, placeholder: #imageLiteral(resourceName: "beer_icon"))
+        
+        nameLabel.text = beer.name ?? "이름 없는 맥주"
+        taglineLabel.text = beer.tagLine
+        
+        accessoryType = .disclosureIndicator //cell에 꺽새모양 추가
+        selectionStyle = .none //탭할경우 음영이 발생 하지 않는다.
     }
 }
