@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2DF55F2AA998D50043327F /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DF55E2AA998D50043327F /* BeerListCell.swift */; };
 		1DEDA19E2A73BB2B00BAA1F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA19D2A73BB2B00BAA1F7 /* AppDelegate.swift */; };
 		1DEDA1A02A73BB2B00BAA1F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA19F2A73BB2B00BAA1F7 /* SceneDelegate.swift */; };
 		1DEDA1A72A73BB2C00BAA1F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEDA1A62A73BB2C00BAA1F7 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D2DF55E2AA998D50043327F /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
 		1DEDA19A2A73BB2B00BAA1F7 /* Brewery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DEDA19D2A73BB2B00BAA1F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DEDA19F2A73BB2B00BAA1F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				1DEDA19D2A73BB2B00BAA1F7 /* AppDelegate.swift */,
 				1DEDA19F2A73BB2B00BAA1F7 /* SceneDelegate.swift */,
 				1DEDA1CD2A73BB9000BAA1F7 /* BeerListViewController.swift */,
+				1D2DF55E2AA998D50043327F /* BeerListCell.swift */,
 				1DEDA1D52A73C31500BAA1F7 /* Beer.swift */,
 				1DEDA1A62A73BB2C00BAA1F7 /* Assets.xcassets */,
 				1DEDA1A82A73BB2C00BAA1F7 /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 				1DEDA19E2A73BB2B00BAA1F7 /* AppDelegate.swift in Sources */,
 				1DEDA1A02A73BB2B00BAA1F7 /* SceneDelegate.swift in Sources */,
 				1DEDA1D62A73C31500BAA1F7 /* Beer.swift in Sources */,
+				1D2DF55F2AA998D50043327F /* BeerListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
