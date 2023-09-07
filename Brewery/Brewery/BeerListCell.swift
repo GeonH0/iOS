@@ -32,17 +32,17 @@ class BeerListCell : UITableViewCell {
         
         beerImageView.snp.makeConstraints{
             $0.centerY.equalToSuperview()
-            $0.leading.trailing.bottom.equalToSuperview().inset(20)
+            $0.leading.top.bottom.equalToSuperview().inset(20)
             $0.width.equalTo(80)
             $0.height.equalTo(120)
         }
         
-        nameLabel.snp.makeConstraints{
+        nameLabel.snp.makeConstraints {
             $0.leading.equalTo(beerImageView.snp.trailing).offset(10)
             $0.bottom.equalTo(beerImageView.snp.centerY)
             $0.trailing.equalToSuperview().inset(20)
         }
-        taglineLabel.snp.makeConstraints{
+        taglineLabel.snp.makeConstraints {
             $0.leading.trailing.equalTo(nameLabel)
             $0.top.equalTo(nameLabel.snp.bottom).offset(5)
         }
