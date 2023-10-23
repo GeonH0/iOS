@@ -20,6 +20,8 @@
 		1DB2FDC82AD81C8400A4A891 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2FDC72AD81C8400A4A891 /* MyButton.swift */; };
 		1DB2FDCA2AD81D5A00A4A891 /* MyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2FDC92AD81D5A00A4A891 /* MyText.swift */; };
 		1DB2FDCC2AD823E200A4A891 /* OnboadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2FDCB2AD823E200A4A891 /* OnboadingView.swift */; };
+		1DBD5BBD2AE6975D0009A049 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD5BBC2AE6975D0009A049 /* Modal.swift */; };
+		1DBD5BBF2AE698410009A049 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD5BBE2AE698410009A049 /* Detail.swift */; };
 		1DD6A1902ADEC00800D69D06 /* SettinEXUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD6A18F2ADEC00800D69D06 /* SettinEXUI.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		1DB2FDC72AD81C8400A4A891 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		1DB2FDC92AD81D5A00A4A891 /* MyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyText.swift; sourceTree = "<group>"; };
 		1DB2FDCB2AD823E200A4A891 /* OnboadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboadingView.swift; sourceTree = "<group>"; };
+		1DBD5BBC2AE6975D0009A049 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		1DBD5BBE2AE698410009A049 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		1DD6A18F2ADEC00800D69D06 /* SettinEXUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettinEXUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,8 @@
 		1D0C35152AE00C0900E33743 /* 03 */ = {
 			isa = PBXGroup;
 			children = (
+				1DBD5BBC2AE6975D0009A049 /* Modal.swift */,
+				1DBD5BBE2AE698410009A049 /* Detail.swift */,
 			);
 			path = 03;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D236AEC2ADD687600052B08 /* ListEXUI.swift in Sources */,
+				1DBD5BBD2AE6975D0009A049 /* Modal.swift in Sources */,
 				1DB2FDCA2AD81D5A00A4A891 /* MyText.swift in Sources */,
 				1D03E36E2AD6D6870000D78C /* SampleView.swift in Sources */,
 				1D9399CA2AD5887000C59DDA /* ContentView.swift in Sources */,
@@ -302,6 +309,7 @@
 				1D9399F22AD5A41200C59DDA /* SimpleView.swift in Sources */,
 				1D9399C82AD5887000C59DDA /* WarmUpApp.swift in Sources */,
 				1DD6A1902ADEC00800D69D06 /* SettinEXUI.swift in Sources */,
+				1DBD5BBF2AE698410009A049 /* Detail.swift in Sources */,
 				1DB2FDCC2AD823E200A4A891 /* OnboadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

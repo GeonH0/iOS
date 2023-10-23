@@ -55,6 +55,7 @@ extension BeerListViewController {
         self.show(detailViewContorller,sender: nil)
     }
 }
+
 //Data Fetching
 private extension BeerListViewController {
     func fetchBeer(of page: Int)  {

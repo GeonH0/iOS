@@ -69,6 +69,7 @@ class CardListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //상세화면 전달
+        
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let detailViewController = storyboard.instantiateViewController(identifier: "CardDetailViewController") as? CardDetailViewController else { return }
         
