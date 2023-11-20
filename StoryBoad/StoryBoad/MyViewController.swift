@@ -7,17 +7,24 @@
 
 import UIKit
 
+protocol AdminDelegate {
+    
+    func doTask()
+}
+
 class MyViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBOutlet weak var helloLabel: UILabel!
     
+    var admin  : Admin?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
 
-        // Do any additional setup after loading the view.
+        admin = Admin(delegate: self)
     }
     
     
@@ -35,4 +42,17 @@ class MyViewController: UIViewController {
     }
     */
 
+}
+
+
+extension MyViewController : AdminDelegate {
+    func doTask() {
+        print("TASKING")
+    }
+    
+    
+}
+
+struct Admin {
+    var delegate : AdminDelegate
 }
