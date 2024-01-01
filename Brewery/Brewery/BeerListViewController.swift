@@ -73,10 +73,8 @@ private extension BeerListViewController {
                   let beers = try? JSONDecoder().decode([Beer].self, from: data) else {
                 print("ERROR: URLSession data task \(error?.localizedDescription ?? "")")
                 return
-                
-                
-                
                   }
+            
             switch response.statusCode {
             case (200...299)://성공
                 self.beerList += beers
