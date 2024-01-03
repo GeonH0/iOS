@@ -6,11 +6,31 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    @StateObject private var pathModel = PathModel()
+    
     @StateObject private var onboardingViewModel = OnboardingViewModel()
     
     var body: some View {
         //TODO : - 화면 전환 구현 필요
-        onboardingContentView(onbaordingViewModel: onboardingViewModel)
+        
+        NavigationStack(path: $pathModel.pahts){
+            onboardingContentView(onbaordingViewModel: onboardingViewModel)
+                .navigationDestination(
+                    for: PathType.self) { pathType in
+                        switch pathType {
+                        case .homeView:
+                            HomeView()
+                                .navigationBarBackButtonHidden()
+                        case .MemoView:
+                            MemoView()
+                                .navigationBarBackButtonHidden()
+                        case .todoView:
+                            TodoView()
+                                .navigationBarBackButtonHidden()
+                        }
+            }
+        }
+        .environmentObject(pathModel)
     }
 }
 
@@ -30,8 +50,7 @@ private struct onboardingContentView : View {
             Spacer()
             StartBtnView()
         }
-        .edgesIgnoringSafeArea(.top
-        )
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
@@ -93,8 +112,7 @@ private struct OnboardingCellVIew :View {
                     
                     Text(onboardingContent.subTitle)
                         .font(.system(size: 16))
-                    
-                    
+                                        
                 }
                 
                 Spacer()
@@ -107,9 +125,10 @@ private struct OnboardingCellVIew :View {
 }
 
 private struct StartBtnView : View {
+    @EnvironmentObject private var pathModel : PathModel
     fileprivate var body: some View {
         Button (
-            action: {},
+            action: { pathModel.pahts.append(.homeView)},
             label: {
                 HStack{
                     Text("시작하기")

@@ -5,5 +5,10 @@
 
 import Foundation
 
-class PathModel {
+class PathModel : ObservableObject {
+    @Published var pahts : [PathType]
+    
+    init(pahts: [PathType] = []) {
+        self.pahts = pahts
+    }
 }
