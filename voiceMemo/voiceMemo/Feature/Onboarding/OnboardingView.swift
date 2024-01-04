@@ -10,11 +10,14 @@ struct OnboardingView: View {
     
     @StateObject private var onboardingViewModel = OnboardingViewModel()
     
+    @StateObject private var todoListViewModel  = TodoListViewModel()
+    
     var body: some View {
-        //TODO : - 화면 전환 구현 필요
-        
+        //MARK : - 화면 전환 구현 필요        
         NavigationStack(path: $pathModel.pahts){
-            onboardingContentView(onbaordingViewModel: onboardingViewModel)
+//            onboardingContentView(onbaordingViewModel: onboardingViewModel)
+            TodoListView()
+                .environmentObject(todoListViewModel)
                 .navigationDestination(
                     for: PathType.self) { pathType in
                         switch pathType {
