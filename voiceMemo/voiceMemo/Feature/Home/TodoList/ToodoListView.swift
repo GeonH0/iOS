@@ -142,13 +142,14 @@ private struct TodoCell : View {
                 if !todoListViewModel.isEditTodoMode {
                     Button(
                         action: {todoListViewModel.seletedBoxTapped(todo)}, label: {
-                            todo.seleted ? Image("seleteBox") : Image("unSeletedBox") }
+                            todo.seleted ? Image("selectedBox") : Image("unSelectedBox") }
                     )
                 }
                 VStack(alignment: .leading,spacing: 5){
                     Text(todo.title)
                         .font(.system(size: 16))
                         .foregroundColor(todo.seleted ? .customIconGray : .customBlack)
+                        .strikethrough(todo.seleted)
                     
                     Text(todo.convertedDateAndTime)
                         .font(.system(size: 15))

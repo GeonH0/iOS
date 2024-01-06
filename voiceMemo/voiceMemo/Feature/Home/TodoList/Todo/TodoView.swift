@@ -44,6 +44,7 @@ struct TodoView: View {
             // select date
             SelectDayView(todoViewModel: todoVIewModel)
                 .padding(.leading,20)
+            Spacer()
         }
     }
 }
@@ -113,35 +114,41 @@ private struct SelectDayView: View {
     }
     var body: some View {
         VStack(spacing: 5){
-            Text("날짜")
-                .foregroundColor(.customIconGray)
-            
-            Spacer()
-        }
-        HStack{
-            Button(
-                action: {todoViewModel.setIsDisplayCalendar(true)},
-                label: {
-                    Text("\(todoViewModel.day.formattedDay)")
-                        .font(.system(size: 18,weight: .medium))
-                        .foregroundColor(.customGreen)
-                }
-            ).popover(
-                isPresented: $todoViewModel.isDisplayCalendar){
-                    DatePicker(
-                        "",
-                        selection: $todoViewModel.day,
-                        displayedComponents: .date)
-                    .labelsHidden()
-                    .datePickerStyle(GraphicalDatePickerStyle())
-                    .frame(maxWidth: .infinity,alignment: .center)
-                    .padding()
-                    .onChange(of: todoViewModel.day) { _ in
-                        todoViewModel.setIsDisplayCalendar(false)
-                        //날짜가 선택될시 캘린더가 닫힌다.
+            HStack{
+                Text("날짜")
+                    .foregroundColor(.customIconGray)
+                
+                Spacer()
+            }
+                        
+            HStack{
+                Button(
+                    action: {todoViewModel.setIsDisplayCalendar(true)},
+                    label: {
+                        Text("\(todoViewModel.day.formattedDay)")
+                            .font(.system(size: 18,weight: .medium))
+                            .foregroundColor(.customGreen)
                     }
-                    Spacer()
-                }
+                ).popover(
+                    isPresented: $todoViewModel.isDisplayCalendar){
+                        DatePicker(
+                            "",
+                            selection: $todoViewModel.day,
+                            displayedComponents: .date)
+                        .labelsHidden()
+                        .datePickerStyle(GraphicalDatePickerStyle())
+                        .frame(maxWidth: .infinity,alignment: .center)
+                        .padding()
+                        .onChange(of: todoViewModel.day) { _ in
+                            todoViewModel.setIsDisplayCalendar(false)
+                            //날짜가 선택될시 캘린더가 닫힌다.
+                        }
+                        
+                        
+                    }
+                Spacer()
+            }
+            
         }
     }
 }

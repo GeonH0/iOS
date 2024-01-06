@@ -30,6 +30,7 @@ struct OnboardingView: View {
                         case .todoView:
                             TodoView()
                                 .navigationBarBackButtonHidden()
+                                .environmentObject(todoListViewModel)
                         }
             }
         }
