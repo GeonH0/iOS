@@ -14,7 +14,7 @@ struct OnboardingView: View {
     
     var body: some View {
         //MARK : - 화면 전환 구현 필요        
-        NavigationStack(path: $pathModel.pahts){
+        NavigationStack(path: $pathModel.paths){
 //            onboardingContentView(onbaordingViewModel: onboardingViewModel)
             TodoListView()
                 .environmentObject(todoListViewModel)
@@ -131,7 +131,7 @@ private struct StartBtnView : View {
     @EnvironmentObject private var pathModel : PathModel
     fileprivate var body: some View {
         Button (
-            action: { pathModel.pahts.append(.homeView)},
+            action: { pathModel.paths.append(.homeView)},
             label: {
                 HStack{
                     Text("시작하기")

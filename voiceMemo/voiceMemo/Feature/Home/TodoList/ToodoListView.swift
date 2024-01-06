@@ -187,7 +187,7 @@ private struct WriteTodoBtnView : View {
                 Spacer()
                 
                 Button(action: {
-                    pathModel.pahts.append(.todoView)
+                    pathModel.paths.append(.todoView)
                 }, label: {
                     Image("writeBtn")
                 })
