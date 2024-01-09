@@ -12,6 +12,8 @@ struct OnboardingView: View {
     
     @StateObject private var todoListViewModel  = TodoListViewModel()
     
+    @StateObject private var memoListViewModel = MemoListViewModel()
+    
     var body: some View {
         //MARK : - 화면 전환 구현 필요        
         NavigationStack(path: $pathModel.paths){
