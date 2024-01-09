@@ -140,7 +140,9 @@ private struct MemoCellView : View {
     
     var body: some View {
         Button(
-            action: {},
+            action: {
+                pathModel.paths.append(.MemoView(isCreatedMode: false, memo: memo))
+            },
             label: {
                 VStack(spacing: 10){
                     HStack{
@@ -195,7 +197,7 @@ private struct WriteMemoBtnView : View {
                 
                 Button(
                     action: {
-                        
+                        pathModel.paths.append(.MemoView(isCreatedMode: true, memo: nil))
                     },
                     label: {
                         Image("writeBtn")

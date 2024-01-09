@@ -15,26 +15,33 @@ struct OnboardingView: View {
     @StateObject private var memoListViewModel = MemoListViewModel()
     
     var body: some View {
-        //MARK : - 화면 전환 구현 필요        
+        //MARK : - 화면 전환 구현 필요
         NavigationStack(path: $pathModel.paths){
-//            onboardingContentView(onbaordingViewModel: onboardingViewModel)
-            TodoListView()
-                .environmentObject(todoListViewModel)
+            //            onboardingContentView(onbaordingViewModel: onboardingViewModel)
+//            
+            MemoListView()
+                .environmentObject(memoListViewModel)
                 .navigationDestination(
                     for: PathType.self) { pathType in
                         switch pathType {
                         case .homeView:
                             HomeView()
                                 .navigationBarBackButtonHidden()
-                        case .MemoView:
-                            MemoView()
-                                .navigationBarBackButtonHidden()
+                        case let .MemoView(isCreatedMode, memo):
+                            MemoView(
+                                memoViewModel: isCreatedMode
+                                ? .init(memo: .init(title: "", content: "", date: .now))
+                                : .init(memo:  memo ?? .init(title: "", content: "", date: .now)),
+                                isCreateMode: isCreatedMode
+                            )
+                            .navigationBarBackButtonHidden()
+                            .environmentObject(memoListViewModel)
                         case .todoView:
                             TodoView()
                                 .navigationBarBackButtonHidden()
                                 .environmentObject(todoListViewModel)
                         }
-            }
+                    }
         }
         .environmentObject(pathModel)
     }
@@ -118,7 +125,7 @@ private struct OnboardingCellVIew :View {
                     
                     Text(onboardingContent.subTitle)
                         .font(.system(size: 16))
-                                        
+                    
                 }
                 
                 Spacer()
