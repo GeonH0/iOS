@@ -8,8 +8,8 @@ import AVFoundation
 class VoiceRecorderViewModel : NSObject,ObservableObject, AVAudioPlayerDelegate {
     //NSObject 상속 받는 이유? -> AVAudioPlayerDelegate를 채택하여 객체를 구현하기 위해서, 간접적으로 runtime 메커니즘을 사용할수 있게 된다.
     @Published var isDisplayRemoveVoiceRecorderAlert : Bool
-    @Published var isDisplayErrorAlert : Bool
-    @Published var errorAlertMessage : String
+    @Published var isDisplayAlert : Bool
+    @Published var AlertMessage : String
     
     // 음성 메모 녹은 관련
     var audioRecorder : AVAudioRecorder?
@@ -39,8 +39,8 @@ class VoiceRecorderViewModel : NSObject,ObservableObject, AVAudioPlayerDelegate 
         recordedFiles: [URL] = [],
         selectedRecoredFile: URL? = nil) {
             self.isDisplayRemoveVoiceRecorderAlert = isDisplayRemoveVoiceRecorderAlert
-            self.isDisplayErrorAlert = isDisplayErrorAlert
-            self.errorAlertMessage = errorAlertMessage
+            self.isDisplayAlert = isDisplayErrorAlert
+            self.AlertMessage = errorAlertMessage
             self.isRecording = isRecording
             self.isPlaying = isPlaying
             self.isPaused = isPaused
@@ -56,8 +56,10 @@ extension VoiceRecorderViewModel {
     func voiceRecordCellTapped(_ recordedFile : URL) {
         if selectedRecoredFile != recordedFile {
             //현재 값과 다른 셀을 클릭할 경우
+            
             // TODO: - 재생 정지 메소드 호출
             stopPlaying()
+            
             selectedRecoredFile = recordedFile
             
         }
@@ -94,11 +96,11 @@ extension VoiceRecorderViewModel {
     }
     
     private func setErrorAlertMessage(_ message : String ){
-        errorAlertMessage = message
+        AlertMessage = message
     }
     
     private func setIsDisplayErrorAlert(_ isDisplay : Bool) {
-        isDisplayErrorAlert = isDisplay
+        isDisplayAlert = isDisplay
     }
     
     private func displayAlert (message : String){

@@ -85,6 +85,7 @@ private struct SelectTimeView : View {
     
     var body: some View {
         VStack{
+            //구분선
             Rectangle()
                 .fill(Color.customGray0)
                 .frame(height: 1)
@@ -97,6 +98,7 @@ private struct SelectTimeView : View {
             .datePickerStyle(WheelDatePickerStyle())
             .frame(maxWidth: .infinity,alignment: .center)
             
+            // 구분선
             Rectangle()
                 .fill(Color.customGray0)
                 .frame(height: 1)
