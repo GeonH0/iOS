@@ -17,9 +17,8 @@ struct OnboardingView: View {
     var body: some View {
         //MARK : - 화면 전환 구현 필요
         NavigationStack(path: $pathModel.paths){
-            //            onboardingContentView(onbaordingViewModel: onboardingViewModel)
-//            
-            TimerView()
+            onboardingContentView(onbaordingViewModel: onboardingViewModel)
+            
                 .environmentObject(memoListViewModel)
                 .navigationDestination(
                     for: PathType.self) { pathType in
@@ -27,6 +26,9 @@ struct OnboardingView: View {
                         case .homeView:
                             HomeView()
                                 .navigationBarBackButtonHidden()
+                                .environmentObject(memoListViewModel)
+                                .environmentObject(todoListViewModel)
+                            
                         case let .MemoView(isCreatedMode, memo):
                             MemoView(
                                 memoViewModel: isCreatedMode
@@ -61,7 +63,9 @@ private struct onboardingContentView : View {
             OnboardingCellListView(onboardingViewModel: onbaordingViewModel)
             // 시작 버튼 뷰
             Spacer()
+            
             StartBtnView()
+            
         }
         .edgesIgnoringSafeArea(.top)
     }
@@ -152,7 +156,7 @@ private struct StartBtnView : View {
                         .renderingMode(.template)
                         .foregroundColor(.customGreen)
                 }
-            })
+            }).padding(.bottom,50)
     }
 }
 
