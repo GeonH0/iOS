@@ -16,8 +16,8 @@ struct Time {
     
     static func fromSeconds(_ seconds : Int) -> Time {
         let hours = seconds / 3600
-        let minutes = (seconds%3600) / 60
-        let remainingSeconds = (seconds%3600) % 60
-        return Time(hours: hours, minutes: minutes, seconds: seconds)
+        let minutes = (seconds % 3600) / 60
+        let remainingSeconds = (seconds % 3600) % 60
+        return Time(hours: hours, minutes: minutes, seconds: remainingSeconds)
     }
 }
