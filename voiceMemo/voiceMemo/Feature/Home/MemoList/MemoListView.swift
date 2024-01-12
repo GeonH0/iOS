@@ -8,7 +8,7 @@ import SwiftUI
 struct MemoListView: View {
     @EnvironmentObject private var pathModel : PathModel
     @EnvironmentObject private var memoListViewModel : MemoListViewModel
-    
+    @EnvironmentObject private var homeviewModel : HomeViewModel
     var body: some View {
         ZStack {
             VStack{
@@ -55,6 +55,11 @@ struct MemoListView: View {
             Button("취소",role: .cancel){
                 
             }
+            .onChange(
+                of: memoListViewModel.memos,
+                perform: { memos in
+                    homeviewModel.setMemosCount(memos.count)                    
+                })
         }
         
     }

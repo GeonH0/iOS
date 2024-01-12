@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct SettingView: View {
+    @EnvironmentObject private var homeViewModel : HomeViewModel
+    
     var body: some View {
         VStack{
             TitleView()
@@ -42,30 +44,18 @@ private struct TitleView : View {
 }
 
 private struct TotalCountView : View {
-    //    @ObservedObject private var TodoViewModel : TodoViewModel
-    //    @ObservedObject private var memoViewModel : MemoViewModel
-    //    @ObservedObject private var voiceRecorderViewModel : VoiceRecorderViewModel
-    
-    //    init(
-    //        TodoViewModel: TodoViewModel,
-    //        memoViewModel: MemoViewModel,
-    //        voiceRecorderViewModel: VoiceRecorderViewModel) {
-    //        self.TodoViewModel = TodoViewModel
-    //        self.memoViewModel = memoViewModel
-    //        self.voiceRecorderViewModel = voiceRecorderViewModel
-    //    }
-    
+    @EnvironmentObject private var homeViewModel : HomeViewModel
     var body: some View {
         HStack{
             
             
-            TabCountView(title: "To do", count: 0)
+            TabCountView(title: "To do", count: homeViewModel.todoCount)
             Spacer()
                 .frame(width: 70)
-            TabCountView(title: "메모", count: 0)
+            TabCountView(title: "메모", count: homeViewModel.memosCount)
             Spacer()
                 .frame(width: 70)
-            TabCountView(title: "음성메모", count: 0)
+            TabCountView(title: "음성메모", count: homeViewModel.voiceRecorderCount)
         }
     }
 }
@@ -94,33 +84,34 @@ private struct TabCountView : View {
 }
 
 private struct TotalTabMoveView : View {
+    @EnvironmentObject private var homeViewModel : HomeViewModel
     var body: some View {
         VStack{
             Rectangle()
-                .fill(Color.customGray0)
+                .fill(Color.customGray1)
                 .frame(height: 1)
             
             TabMoveView(
                 title: "To do 리스트",
-                tabAction: { }
+                tabAction: { homeViewModel.changeSeletedTab(.todoList) }
             )
             
             TabMoveView(
                 title: "메모",
-                tabAction: { }
+                tabAction: {homeViewModel.changeSeletedTab(.memo) }
             )
             TabMoveView(
                 title: "음성메모",
-                tabAction: { }
+                tabAction: {homeViewModel.changeSeletedTab(.voiceRecorder) }
             )
             TabMoveView(
                 title: "타이머",
-                tabAction: { }
+                tabAction: {homeViewModel.changeSeletedTab(.timer) }
             )
             
             
             Rectangle()
-                .fill(Color.customGray0)
+                .fill(Color.customGray1)
                 .frame(height: 1)
         }
     }
@@ -161,5 +152,6 @@ private struct TabMoveView : View {
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
         SettingView()
+            .environmentObject(HomeViewModel())
     }
 }

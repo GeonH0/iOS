@@ -9,6 +9,7 @@ struct TodoListView: View {
     
     @EnvironmentObject private var pathModel : PathModel
     @EnvironmentObject private var todoListViewModel : TodoListViewModel
+    @EnvironmentObject private var homeViewModel : HomeViewModel
     
     var body: some View {
         
@@ -35,7 +36,7 @@ struct TodoListView: View {
                     TodoListContentView()
                         .padding(.top,20)
                 }
-                    
+                
                 
             }
             WriteTodoBtnView()
@@ -44,13 +45,19 @@ struct TodoListView: View {
         }
         .alert(
             "To do List \(todoListViewModel.removeTodosCoutnt)개 삭제하시겠습니까?",
-            isPresented: $todoListViewModel.isDisplayRemoveTodoAlert){
-                Button("삭제", role: .destructive){
-                    todoListViewModel.removeBtnTapped()
-                }
-                Button("취소",role: .cancel){}
+            isPresented: $todoListViewModel.isDisplayRemoveTodoAlert
+        ){
+            Button("삭제", role: .destructive){
+                todoListViewModel.removeBtnTapped()
             }
-        
+            Button("취소",role: .cancel){}
+            
+        }
+        .onChange(
+            of: todoListViewModel.todos,
+            perform: { todos in
+                homeViewModel.setTodosCount(todos.count)
+            })
     }
 }
 
