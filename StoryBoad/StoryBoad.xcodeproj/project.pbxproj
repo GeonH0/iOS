@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2234A22B61DFCC000DD27E /* EXUikitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2234A12B61DFCC000DD27E /* EXUikitViewController.swift */; };
 		1D924CFF2B0ADAAC00FE3934 /* MytableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D924CFE2B0ADAAC00FE3934 /* MytableViewController.swift */; };
 		1D924D012B0AEB7100FE3934 /* EXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D924D002B0AEB7100FE3934 /* EXViewController.swift */; };
 		1DBA38792AF8BF0C0081FC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA38782AF8BF0C0081FC77 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D2234A12B61DFCC000DD27E /* EXUikitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXUikitViewController.swift; sourceTree = "<group>"; };
 		1D924CFE2B0ADAAC00FE3934 /* MytableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MytableViewController.swift; sourceTree = "<group>"; };
 		1D924D002B0AEB7100FE3934 /* EXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXViewController.swift; sourceTree = "<group>"; };
 		1DBA38752AF8BF0C0081FC77 /* StoryBoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 				1DBA38832AF8BF0E0081FC77 /* LaunchScreen.storyboard */,
 				1DBA38862AF8BF0E0081FC77 /* Info.plist */,
 				1D924CFE2B0ADAAC00FE3934 /* MytableViewController.swift */,
+				1D2234A12B61DFCC000DD27E /* EXUikitViewController.swift */,
 			);
 			path = StoryBoad;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D924CFF2B0ADAAC00FE3934 /* MytableViewController.swift in Sources */,
+				1D2234A22B61DFCC000DD27E /* EXUikitViewController.swift in Sources */,
 				1DBA387D2AF8BF0C0081FC77 /* ViewController.swift in Sources */,
 				1DBA38792AF8BF0C0081FC77 /* AppDelegate.swift in Sources */,
 				1D924D012B0AEB7100FE3934 /* EXViewController.swift in Sources */,

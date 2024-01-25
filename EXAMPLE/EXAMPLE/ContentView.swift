@@ -7,35 +7,40 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedTab = 0
-
+    // 상단 탭을 위한 상태 변수
+    @State private var selectedTopTab = 0
+    
+    // 하단 탭을 위한 상태 변수
+    @State private var selectedBottomTab = 0
+    
     var body: some View {
-        VStack {
-            TabView(selection: $selectedTab) {
-                Text("구해요 탭의 콘텐츠")
-                    .tabItem { Text("구해요") }
-                    .tag(0)
-                Text("바꿔요 탭의 콘텐츠")
-                    .tabItem { Text("바꿔요") }
-                    .tag(1)
-                Text("추천 도서 탭의 콘텐츠")
-                    .tabItem { Text("추천 도서") }
-                    .tag(2)
-            }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            .frame(height: 200)
-            
-            Picker("", selection: $selectedTab) {
-                Text("구해요").tag(0)
-                Text("바꿔요").tag(1)
-                Text("추천 도서").tag(2)
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-            
-            // 여기에 나머지 뷰 컨텐츠를 추가합니다.
-            Spacer()
+        
+        
+        // 하단 탭
+        TabView(selection: $selectedBottomTab) {
+            FirstTabView().tabItem {
+                Label("홈", systemImage: "house")
+            }.tag(0)
+            Text("탐색").tabItem {
+                Label("탐색", systemImage: "magnifyingglass")
+            }.tag(1)
+            Text("추가").tabItem {
+                Label("추가", systemImage: "plus.circle")
+            }.tag(2)
+            Text("알림").tabItem {
+                Label("알림", systemImage: "bell")
+            }.tag(3)
+            Text("설정").tabItem {
+                Label("설정", systemImage: "gear")
+            }.tag(4)
         }
+        
+    }
+}
+
+struct FirstTabView :View {
+    var body: some View {
+        Text("HELLO")
     }
 }
 
