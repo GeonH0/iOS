@@ -38,11 +38,7 @@ struct ContentView: View {
     }
 }
 
-struct FirstTabView :View {
-    var body: some View {
-        Text("HELLO")
-    }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

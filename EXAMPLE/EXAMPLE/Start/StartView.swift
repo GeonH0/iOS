@@ -12,7 +12,7 @@ struct StartView: View {
         HStack{
             Text("다 읽고 안보는 책 \n자리만 차지하는 책 \n다른책으로 교환하고 싶다면?")
             Button(
-                action: (),
+                action: {},
                 label: {
                     Text("시작하기")
                         .font(.system(size: 18,weight: .medium))
