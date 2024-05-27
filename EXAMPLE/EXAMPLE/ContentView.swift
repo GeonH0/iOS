@@ -1,44 +1,49 @@
-//
-//  ContentView.swift
-//  EXAMPLE
-//
-//  Created by 김건호 on 1/18/24.
-//
 import SwiftUI
 
 struct ContentView: View {
-    // 상단 탭을 위한 상태 변수
-    @State private var selectedTopTab = 0
-    
-    // 하단 탭을 위한 상태 변수
-    @State private var selectedBottomTab = 0
-    
+    @State private var selectedItem = 1
+    @State private var shouldShowActionSheet = false
+    @State private var oldSelectedItem = 1
+
     var body: some View {
-        
-        
-        // 하단 탭
-        TabView(selection: $selectedBottomTab) {
-            FirstTabView().tabItem {
-                Label("홈", systemImage: "house")
-            }.tag(0)
-            Text("탐색").tabItem {
-                Label("탐색", systemImage: "magnifyingglass")
-            }.tag(1)
-            Text("추가").tabItem {
-                Label("추가", systemImage: "plus.circle")
-            }.tag(2)
-            Text("알림").tabItem {
-                Label("알림", systemImage: "bell")
-            }.tag(3)
-            Text("설정").tabItem {
-                Label("설정", systemImage: "gear")
-            }.tag(4)
+        TabView (selection: $selectedItem) {
+            Text("Home")
+                .tabItem { Image(systemName: "house") }
+                .tag(1)
+                .onAppear { self.oldSelectedItem = self.selectedItem }
+            Text("Search")
+                .tabItem { Image(systemName: "magnifyingglass") }
+                .tag(2)
+                .onAppear { self.oldSelectedItem = self.selectedItem }
+            
+            Text("Add")
+                .tabItem { Image(systemName: "plus.circle") }
+                .tag(3)
+                .onAppear {
+                    self.shouldShowActionSheet.toggle()
+                    self.selectedItem = self.oldSelectedItem
+                }
+            
+            Text("Heart")
+                .tabItem { Image(systemName: "heart") }
+                .tag(4)
+                .onAppear { self.oldSelectedItem = self.selectedItem }
+            Text("Profile")
+                .tabItem { Image(systemName: "person.crop.circle") }
+                .tag(5)
+                .onAppear { self.oldSelectedItem = self.selectedItem }
         }
-        
+        .actionSheet(isPresented: $shouldShowActionSheet) { ActionSheet(title: Text("Title"), message: Text("Message"), buttons: [.default(Text("Option 1"), action: option1), .default(Text("Option 2"), action: option2) , .cancel()]) }
+    }
+
+    func option1() {
+        // do logic 1
+    }
+
+    func option2() {
+        // do logic 2
     }
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

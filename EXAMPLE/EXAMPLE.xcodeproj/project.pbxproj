@@ -65,13 +65,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D2234A32B624744000DD27E /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		1D2234A42B624757000DD27E /* Start */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +103,6 @@
 				1D8401932B669A1E00ADEEB5 /* Info.plist */,
 				1D2234A72B624885000DD27E /* elements */,
 				1D2234A42B624757000DD27E /* Start */,
-				1D2234A32B624744000DD27E /* Login */,
 				1D7295A32B5F3B9700A7D9D9 /* GoogleService-Info.plist */,
 				1DB39DAE2B6B17EE00C1B489 /* CustomTabview.swift */,
 				1D3C7BA22B59074000965776 /* EXAMPLEApp.swift */,
