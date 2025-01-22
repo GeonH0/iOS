@@ -15,7 +15,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let homeViewController = TextViewController(interactor: TextInteractorImpl())
+        let homeViewController = MainTabBarViewController()
+        let firstVC = UIViewController()
+        firstVC.view.backgroundColor = .white
+        let secondVC = UIViewController()
+        secondVC.view.backgroundColor = .white
+        let thirdVC = UIViewController()
+        thirdVC.view.backgroundColor = .white
+
+        let homeImage = UIImage(systemName: "house")!
+        let searchImage = UIImage(systemName: "house")!
+        let favoritesImage = UIImage(systemName: "house")!
+
+        homeViewController.setViewControllers(
+            [firstVC, secondVC, thirdVC],            
+            images: [homeImage, searchImage, favoritesImage]
+        )
         let navigationController = UINavigationController(rootViewController: homeViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
