@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1D2596662B1DF74C000A922D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2596652B1DF74C000A922D /* LoginView.swift */; };
 		1D25968F2B1FF9F1000A922D /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D25968E2B1FF9F1000A922D /* SampleView.swift */; };
+		1D48902F2CB90BA600F7ACDA /* StateObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D48902E2CB90BA600F7ACDA /* StateObjectView.swift */; };
+		1D4890312CB90C1000F7ACDA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4890302CB90C1000F7ACDA /* ViewModel.swift */; };
 		1D62E9EA2B16F2AE0011DA14 /* SwiftUIBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62E9E92B16F2AE0011DA14 /* SwiftUIBoardApp.swift */; };
 		1D62E9EC2B16F2AE0011DA14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62E9EB2B16F2AE0011DA14 /* ContentView.swift */; };
 		1D62E9EE2B16F2AF0011DA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D62E9ED2B16F2AF0011DA14 /* Assets.xcassets */; };
@@ -21,11 +23,14 @@
 		1D62EA052B17473A0011DA14 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D62EA042B17473A0011DA14 /* FirebaseAnalyticsSwift */; };
 		1D62EA072B17473A0011DA14 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 1D62EA062B17473A0011DA14 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		1D62EA092B17473A0011DA14 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 1D62EA082B17473A0011DA14 /* FirebaseAppCheck */; };
+		1DCE7E382CAEA8AC00BC693E /* EXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE7E372CAEA8AC00BC693E /* EXView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D2596652B1DF74C000A922D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1D25968E2B1FF9F1000A922D /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		1D48902E2CB90BA600F7ACDA /* StateObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectView.swift; sourceTree = "<group>"; };
+		1D4890302CB90C1000F7ACDA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1D62E9E62B16F2AE0011DA14 /* SwiftUIBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D62E9E92B16F2AE0011DA14 /* SwiftUIBoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBoardApp.swift; sourceTree = "<group>"; };
 		1D62E9EB2B16F2AE0011DA14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		1D62E9F22B16F2AF0011DA14 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1D62E9F52B16F2AF0011DA14 /* SwiftUIBoard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIBoard.xcdatamodel; sourceTree = "<group>"; };
 		1D62E9FD2B1746BE0011DA14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1DCE7E372CAEA8AC00BC693E /* EXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		1D62E9E82B16F2AE0011DA14 /* SwiftUIBoard */ = {
 			isa = PBXGroup;
 			children = (
+				1D48902E2CB90BA600F7ACDA /* StateObjectView.swift */,
+				1D4890302CB90C1000F7ACDA /* ViewModel.swift */,
+				1DCE7E372CAEA8AC00BC693E /* EXView.swift */,
 				1D62E9FD2B1746BE0011DA14 /* GoogleService-Info.plist */,
 				1D62E9E92B16F2AE0011DA14 /* SwiftUIBoardApp.swift */,
 				1D62E9EB2B16F2AE0011DA14 /* ContentView.swift */,
@@ -174,11 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D62E9F62B16F2AF0011DA14 /* SwiftUIBoard.xcdatamodeld in Sources */,
+				1D4890312CB90C1000F7ACDA /* ViewModel.swift in Sources */,
 				1D62E9F32B16F2AF0011DA14 /* Persistence.swift in Sources */,
 				1D62E9EC2B16F2AE0011DA14 /* ContentView.swift in Sources */,
+				1D48902F2CB90BA600F7ACDA /* StateObjectView.swift in Sources */,
 				1D2596662B1DF74C000A922D /* LoginView.swift in Sources */,
 				1D25968F2B1FF9F1000A922D /* SampleView.swift in Sources */,
 				1D62E9EA2B16F2AE0011DA14 /* SwiftUIBoardApp.swift in Sources */,
+				1DCE7E382CAEA8AC00BC693E /* EXView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
