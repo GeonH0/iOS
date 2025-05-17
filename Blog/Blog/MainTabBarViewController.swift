@@ -42,7 +42,7 @@ class MainTabBarViewController: UIViewController {
         let selectedVC = viewControllers[index]
         
         if currentViewController == selectedVC {
-            return // 동일 탭 선택 시 아무 작업도 하지 않음
+            return
         }
         
         let oldVC = currentViewController

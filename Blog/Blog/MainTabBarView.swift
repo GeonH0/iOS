@@ -26,15 +26,13 @@ class MainTabBarView: UIView {
 
         for (index, image) in images.enumerated() {
             let button = UIButton(type: .system)
-            
-            // UIButtonConfiguration 사용
             var config = UIButton.Configuration.plain()
             config.image = image.withRenderingMode(.alwaysTemplate)
-            config.imagePadding = 0 // 이미지와 텍스트 간 거리
+            config.imagePadding = 0
             config.baseForegroundColor = .gray
             config.contentInsets = NSDirectionalEdgeInsets(top: -10, leading: 0, bottom: 0, trailing: 0) // 이미지 상단 이동
 
-            button.configuration = config // 설정 적용
+            button.configuration = config
             button.tintColor = .gray
             button.tag = index
             button.addTarget(self, action: #selector(tabButtonTapped(_:)), for: .touchUpInside)
